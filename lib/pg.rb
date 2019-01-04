@@ -53,6 +53,7 @@ module PG
 
 	### Convenience alias for PG::Connection.new.
 	def self::connect( *args )
+		puts "--- Connection args --- #{args}"
 		return PG::Connection.new( *args )
 	end
 
